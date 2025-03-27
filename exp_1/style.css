@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically */
+    justify-content: center;
+    /* Centers the title */
+    background: rgba(92, 49, 2, 0.8);
+    /* Semi-transparent background */
+    color: rgb(15, 5, 1);
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    /* Keeps the header at the top */
+    top: 0;
+    left: 0;
+}
+
+/* Logo/Image Styling */
+.header img {
+    height: 80px;
+    width: 100px;
+    margin-right: auto;
+}
+
+/* Title Styling */
+.header h3 {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 50px;
+}
+
+/* Parent Container with Background Image */
+.container {
+    padding: 80px 0px 0px 0px;
+    background-image: url('./bgimg.png');
+}
+.content {
+    padding-top: 60px;
+    display: flex;
+    height: 600px;
+}
+.personal {
+    width: 50%;
+    background-color: rgba(40, 36, 36, 0.3);
+    font-family: 'Georgia', serif;
+    color: rgb(128, 22, 22);
+    padding: 50px;
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+}
+
+/* Professional Section */
+.professional {
+    width: 50%;
+    color: rgb(58, 39, 136);
+    background-color: rgba(36, 222, 197, 0.5);
+    font-family: 'Verdana', sans-serif;
+    padding: 50px;
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+}
+/* Footer Styling */
+#footer {
+    display: flex;
+    justify-content: center;
+    /* Center align icons */
+    align-items: center;
+    background: #222;
+    /* Dark background for contrast */
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(21, 97, 138);
+}
+/* Footer Icons */
+#footer a {
+    display: inline-block;
+    margin: 0 15px;
+    /* Space between icons */
+    text-align: none;
+}
+
+#footer img {
+    width: 30px;
+    /* Keeps icons uniform */
+    height: 30px;
+    /* Maintains aspect ratio */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    /*
+    Smooth effect */
+}
+
+#footer img:hover {
+    transform: scale(1.2);
+    /* Zoom effect */
+    opacity: 0.8;
+    /* Slight transparency */
+}
